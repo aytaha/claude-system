@@ -110,6 +110,16 @@ Replace `<path-to>` with the directory you cloned into.
 8. **Leave `MEMORY.md` files empty.** Memory is earned, not seeded.
 9. **Verify:** list the final tree and confirm every agent, memory file, and rule exists. Report what was merged, skipped, or needs the user's decision.
 
+## Running Claude as the Lead
+
+Once the system is applied, start Claude from the project root with the Lead agent as the main agent, so every request is routed through it:
+
+```bash
+claude --dangerously-skip-permissions --agent lead
+```
+
+`--dangerously-skip-permissions` lets agents run commands and edit files without asking. Use it only in a project you trust, ideally in a container or VM, and drop the flag if you want to approve each action.
+
 ## Customizing
 
 - **Add an agent:** create `.claude/agents/<team>/<name>.md` with the same sections and frontmatter, add `.claude/agent-memory/<name>/MEMORY.md`, and add a row to `AGENTS.md`.
