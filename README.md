@@ -83,9 +83,17 @@ Optional third-party and stack-specific skills are listed in `template/AGENTS.md
 
 ## Applying it to a project
 
-Tell Claude:
+Clone this repo anywhere on your machine:
 
-> Apply the Claude system from `D:\claude-system` to this project.
+```bash
+git clone https://github.com/aytaha/claude-system.git
+```
+
+Then, from your project, tell Claude:
+
+> Apply the Claude system from `<path-to>/claude-system` to this project.
+
+Replace `<path-to>` with the directory you cloned into.
 
 ### Instructions for Claude (follow these when asked to apply the system)
 
