@@ -114,4 +114,4 @@ Replace `<path-to>` with the directory you cloned into.
 
 - **Add an agent:** create `.claude/agents/<team>/<name>.md` with the same sections and frontmatter, add `.claude/agent-memory/<name>/MEMORY.md`, and add a row to `AGENTS.md`.
 - **Add a rule:** keep it short. Everything in `.claude/rules/` is loaded into every session.
-- **Improve the system itself:** when a project teaches a lesson that is **generic**, promote it back into `D:\claude-system\template` so future projects start with it. Keep project-specific facts out of this folder.
+- **Improve the system itself:** when a project teaches a lesson that is **generic**, promote it back into `claude-system/template` (via a PR if you forked it) so future projects start with it. Keep project-specific facts out of this folder.
